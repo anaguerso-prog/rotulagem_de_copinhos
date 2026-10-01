@@ -9,27 +9,27 @@ principal.addEventListener('click', ()=>{
     let raioMenor = Number(document.getElementById('raioMenor').value)
     let altura = Number(document.getElementById('altura').value)
 
-    // console.log(`--> ${raioMaior}`)
-    // console.log(`--> ${raioMenor}`)
-    // console.log(`--> ${altura}`)
+    console.log(`--> ${raioMaior}`)
+    console.log(`--> ${raioMenor}`)
+    console.log(`--> ${altura}`)
 
     let copo = new Copo(raioMaior, raioMenor, altura)
 
     console.log(copo)
 
-    let calcG = cop1.calcGeratris()
-    let calcABM = cop1.calcABMaior()
-    let calcABm = cop1.calcABMenor()
-    let calcAL = cop1.calcAreaLateral()
-    let calcV = cop1.calcVolume()
-    let clasfC = cop1.classificar()
+    let calcG = copo.calcGeratris()
+    let calcABM = copo.calcABMaior()
+    let calcABm = copo.calcABMenor()
+    let calcAL = copo.calcAreaLateral()
+    let calcV = copo.calcVolume()
+    let classificar = copo.classificar()
 
     console.log(`o calculo da geratris ficou em: ${calcG.toFixed(2)}`)
     console.log(`o calculo da base maior ficou em: ${calcABM.toFixed(2)}`)
     console.log(`o calculo da base menor ficou em: ${calcABm.toFixed(2)}`)
     console.log(`o calculo da area lateral ficou em: ${calcAL.toFixed(2)}`)
     console.log(`o calculo do volume ficou em: ${calcV.toFixed(2)}`)
-    console.log(`este copo é classificado como ${clasfC.toFixed(2)}`)
+    console.log(`este copo é classificado como ${classificar}`)
 
     resposta.innerHTML = ''
     resposta.innerHTML += `<p> o calculo da geratris ficou em: ${calcG.toFixed(2)}</p>`
@@ -37,6 +37,6 @@ principal.addEventListener('click', ()=>{
     resposta.innerHTML += `<p> o calculo da base menor ficou em: ${calcABm.toFixed(2)}</p>`
     resposta.innerHTML += `<p> o calculo da area lateral ficou em: ${calcAL.toFixed(2)}</p>`
     resposta.innerHTML += `<p> o calculo do volume ficou em: ${calcV.toFixed(2)}</p>`
-    resposta.innerHTML += `<p> este copo é classificado como ${clasfC.toFixed(2)}</p>`
+    resposta.innerHTML += `<p> este copo é classificado como ${classificar}</p>`
 
 })

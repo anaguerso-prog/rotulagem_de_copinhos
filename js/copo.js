@@ -14,19 +14,18 @@ class Copo{
         return Math.PI * (this.raioMenor * this.raioMenor)
     }
     calcAreaLateral(){
-        return Math.PI * calcGeratris() * (this.raioMaior + this.raioMenor)
+        return Math.PI * this.calcGeratris() * (this.raioMaior + this.raioMenor)
     }
     calcVolume(){
         return Math.PI * this.altura / 3 * ((this.raioMaior * this.raioMaior) + this.raioMaior * this.raioMenor + (this.raioMenor * this.raioMenor))
     }
     classificar(){
-        let volume = this.calcVolume()
         
-        if(volume <= 180){
+        if(this.calcVolume() <= 180){
             return ' copo de dose! Ideal para café!'
-        }else if(volume >= 181 && volume <= 350){
+        }else if(this.calcVolume() >= 181 && this.calcVolume() <= 350){
             return ' copo padrão! Ideal para servir água ou chá!'
-        }else if(volume >= 350){
+        }else if(this.calcVolume() >= 350){
             return ' copo grande! Ideal para sucos e refrigerantes!'
         }
 

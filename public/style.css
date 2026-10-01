@@ -9,22 +9,27 @@ body{
 h1{
     color:wheat;
     font-size: 3.2rem;
+    font-family: 'Times New Roman';
 }
 h2{
     color:wheat;
     font-size: 2rem;
+    font-family: 'Lucida Sans';
 }
 label{
-margin-left: 1rem;
-margin-top: 2rem;
-color: wheat;
-
+    margin-left: 1rem;
+    margin-top: 2rem;
+    color: wheat;
+    font-family: 'Lucida Sans';
+    
 }
 input, button{
     margin-left: 1rem;
     border-radius: 8px;
+    font-family: 'Lucida Sans';
 }
 div{
     color: wheat;
     margin-left: 1rem;
+    font-family: 'Lucida Sans';
 }
